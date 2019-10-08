@@ -8,8 +8,15 @@ def merge( arrA, arrB ):
 
 
 # TO-DO: implement the Merge Sort function below USING RECURSION
-def merge_sort( arr ):
+def merge_sort(arr):
     # TO-DO
+    # check if arr is not empty
+    if len(arr) > 1:
+        # find middle point of arr to split
+        middle = len(arr) // 2
+        left = arr[:middle]
+        right = arr[middle:]
+        merge(left, right)
 
     return arr
 
